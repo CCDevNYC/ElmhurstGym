@@ -1,0 +1,424 @@
+/* Elmhurst Gym */
+*{
+    margin: 0;
+    padding: 0;
+/*    border: 1px solid;*/
+    box-sizing: border-box;
+}
+html{
+    font-family: Play, Arial, 'sans-serif';
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+}
+.logo{
+    background-image: url("images/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 30%;
+    height: auto;
+    padding-top: 40px ;
+    display: inline-block;
+/*    border: none;*/
+}
+.center{
+    width: 60%;
+    margin: 0 auto; 
+}
+header{
+    background-color: #ff6600;  
+    position: fixed;
+    width: 100%; 
+    z-index: 9999;
+}
+
+/*
+.center:before,
+.center:after {
+  content: "";
+  display: table;
+    
+}
+.center:after{
+   
+    clear: both;
+    
+}
+*/
+nav{
+    float: right;
+    height: auto;
+/*    margin-top: -42px;*/  
+}
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+nav ul li a:hover{
+    background-color: #000000;
+    transition: all 500ms;
+}
+nav ul li{
+    float: left;
+    padding: 5px;
+    margin: 0;
+    list-style: none;
+    z-index: -9999; 
+}
+#hamburger-menu{
+	width: 24px;
+	height: 20px;
+	/*border: 1px solid #000;*/
+	background: url(images/hamburger-menu.png) no-repeat;
+	float: right;
+	margin-top: 10px;
+	display: none;
+}
+#hero{
+    width: 100%;
+    height: 600px; 
+    background-image: url(images/heroImg.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    position: relative;   
+}
+#heroContent{
+    width: 40%;
+    height: auto;
+    right: 30%;
+    margin-top: 170px;
+    margin-bottom: 50px;
+/*    padding: 190px 0 0 0; */
+    position: absolute;
+}
+h1 {
+    color: #ff6600;
+    font-size: 4em;
+    line-height: 1;
+    text-shadow: 1px 1px 1px #000;
+    padding-top: 50px;
+    margin-bottom: 10px;
+    width: 100%;
+/*    text-shadow: 0px 0px 4px #ffffff;*/
+}
+#heroContent p{
+    color: #ffffff;
+    font-size: 1.7em;
+    text-align: left;
+    text-shadow: 1px 1px 1px #000000;
+    padding-bottom: 20px;
+}
+input[type=text]{
+    font-size: 1em;
+    width: 240px;
+    height: 40px;
+    border: 1px solid #ff6600;
+    border-radius: 5px;
+    padding-left: 10px;
+    float: left;
+    margin: 0 10px 10px 0; 
+}
+input[type=submit]{
+    width: 100px;
+    height: 40px;
+    clear: both;
+    background-color: #ff6600;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    font-size: 1.3em;
+    box-shadow: 0px 4px 0px #993300;
+    margin-bottom: 55px;
+}
+input[type=submit]:hover{
+    background-color: #b94a00;
+    transition: all 500ms;
+}
+/* input[type=submit]:after{
+	} */
+#fitExp{
+    background-image:  linear-gradient(90deg, black , black,transparent), url("images/fitExp.jpg");
+    background-position: right 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+h2, p {
+    color: #ffffff;
+} 
+
+#fitExp h2{
+    font-size: 2.5em;
+    padding: 40px 0 10px 0;
+    text-shadow: 1px 1px 1px #000000;
+    text-align: center;
+}
+p{
+    font-size: 1.5em;
+    text-shadow: 1px 1px 1px #000000;
+    padding-bottom: 50px;
+}
+#about p {
+    color: #000000;
+    text-shadow: none;
+    padding-bottom: 20px;  
+}
+#why h3{
+    font-size: 1.5em;
+}
+#why p{
+    font-size: 1em;
+}
+p{
+    font-size: 1.3em;
+    text-align: center;
+}
+#about h2 {
+    color: #000000;
+    padding: 40px 0 10px 0;
+    font-size: 2.5em;
+    text-align: center;
+}
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: block;
+}
+.clearfix:after{
+    clear: both;   
+}
+.reason{
+    float: left;
+    width: 50%;
+    height: auto;
+/*    margin-right: 2%;*/
+/*    border: 2px solid #ff0000;*/
+/*    background-color: #444;*/
+    padding: 0 2%;
+    padding-bottom: 3%;   
+}
+.reason img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+.reason h3{
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.reason p{
+    color: #000000;
+    text-shadow: none;
+    padding-bottom: 30px;
+    text-align: center;
+}
+h2.why{
+    width: 100%;
+/*    border: 2px solid #ff0000;*/
+    color: #000;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    font-size: 2.5em;
+}
+footer{
+    background-color: #000000;
+    border-bottom: 10px solid #ff6600;
+}
+#ftrnav-wrapper{
+    /*margin: 0 auto;*/
+    width: 100%;
+    border: 1px solid red;
+}
+#footer-nav {
+   /* margin: 0 auto;*/
+    width: auto;
+    height: auto;
+    float: none;
+    padding: 10px 0;
+}
+#footer-nav ul {
+    /*margin: 0 auto;*/
+    float: none;
+}
+.watermark{
+    color: #ffffff;
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    margin: 20px 0;
+    padding-top: 30px;
+    line-height: 1;
+/*    border: 1px solid red;*/
+    clear: both;
+}
+#copyright, #credits{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: .7em;
+}
+#credits{
+    margin-bottom: 10px;
+}
+input{
+    display: block;
+    height: 200px; 
+}
+/*Media Query*/
+@media only screen and (max-width: 1140px){
+    .logo{
+        width: 30%;
+        height: auto;
+    } 
+    #hamburger-menu ul{
+        background-color: #ff6600;
+        /* display: relative; */
+        position: relative;
+        float: right;
+        /* border: 1px solid red; */
+        z-index: 99999999;
+        /* border: 1px solid #fff;
+        border-top: none; */
+        top:19px;
+        /* right: 20px; */
+        display: none;
+    }
+    #hamburger-menu li{
+    float: left;
+    list-style: none;
+    width: 100%;
+    
+    }
+    #hamburger-menu a{
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        padding: 5px 25px ;
+        /* float: right; */
+        }
+        #hamburger-menu a:hover{
+            background-color: #000;
+            transition: 0.2s all;  
+        }
+        #hamburger-menu:hover > ul{
+            display: block;
+            transition: 0.2s;
+        }
+    #hero{
+        height: 400px;
+    }
+    #hero{
+        height: 400px;
+    }
+    #hero #heroContent{
+        width: 60%;
+        clear: both;
+    }
+    #heroContent h1{
+        width: 100%;
+        font-size: 3em;
+        margin-top: -100px;
+    }
+    #heroContent p{
+        text-align: left;
+        font-size: 1.12em;   
+    }
+    nav{
+        display: none;
+    }
+    #hamburger-menu:hover{
+    /* transform: scale(1.2);
+    transition:1s; */
+    }
+    .center{
+        width: 90%;   
+    }
+    .center #hamburger-menu{
+        display: block;
+    }
+    div.logo{
+        background-size: contain;
+    }
+    .reason{
+        /* float: none; */
+        width:50%;
+        margin: 0 auto;
+    }   
+}
+@media only screen and (max-width: 640px){
+h1{
+    width: 400px;
+}
+}
+@media screen and (max-width:468px){
+    html{
+        font-size: 14px;
+    }
+    .logo{
+        width: 50%;
+        height: auto;
+    }
+    .reason{
+        float: none;
+        width:100%;
+    }
+    #hero{
+        height: 400px;
+    }
+    h1{
+        margin-top: -100px;
+        font-size: 2.5em !important;
+        /* padding-top: 50px; */
+    }
+    .center h2{
+        font-size: 1.5em !important;
+    }
+    p{
+        font-size: 1em;
+    }
+    /* ///////////// */
+
+    #hamburger-menu ul{
+        background-color: #ff6600;
+        width: 100%;
+        /* display: relative; */
+        position: relative;
+        float: right;
+        z-index: 99999999;
+        top: 19px;
+        display: none;
+    }
+    #hamburger-menu li{
+    float: left;
+    list-style: none;
+    width: 100%;
+    }
+    #hamburger-menu a{
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        padding: 5px 25px ;
+        /* float: right; */
+        /* border: 1px solid #fff; */
+        width: 100%;
+        }
+        #hamburger-menu a:hover{
+            background-color: #000;
+            transition: 0.2s all;
+        }
+        #hamburger-menu:hover > ul{
+            display: block;
+            transition: 0.2s;
+            width: auto;
+        }
+}
+
